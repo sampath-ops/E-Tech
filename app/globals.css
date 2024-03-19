@@ -14,3 +14,11 @@
       grid-template-rows: repeat(3, 30px); /* 3 rows with 30px height each */
     }
   }
+
+  #testimonial_card:hover,#testimonial_card:hover #designation{
+
+    color: #FFF;
+    
+    background-color: #00C700;
+    
+    }

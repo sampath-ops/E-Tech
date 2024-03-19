@@ -4,6 +4,7 @@ import FeaturedServices from "./Components/FeaturedServices";
 import OurProducts from "./Components/OurProducts";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
+import Testimonial from "./Components/Testimonial";
 export default function Home() {
   return (
     <div>
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero/>
       <FeaturedServices/>
       <OurProducts/>
+      <Testimonial/>
       <ContactUs/>
       <Footer/>
     </div>
