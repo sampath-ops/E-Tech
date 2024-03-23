@@ -15,7 +15,7 @@ const servicesData : Service[] = [
         name:"Green Building Technologies",
         image:"/Images/Building.png",
         desc:"Design and implementation of sustainable building practices",
-        bgColor:"FF9317",
+        bgColor:"bg-[#FF9317]",
         url:"",
         index:0
     },
@@ -23,7 +23,7 @@ const servicesData : Service[] = [
         name:"Eco-Friendly IT Solutions",
         image:"/Images/IT.png",
         desc:"Implementation of energy-efficient servers and data centers",
-        bgColor:"",
+        bgColor:"bg-[#D44CA0]",
         url:"",
         index:1
     },
@@ -31,7 +31,7 @@ const servicesData : Service[] = [
         name:"Smart Sustainability Solutions",
         image:"/Images/Sustain.png",
         desc:"Integration of electric and hybrid vehicles into fleets.",
-        bgColor:"",
+        bgColor:"bg-[#001EA2]",
         url:"",
         index:2
     },
@@ -39,7 +39,7 @@ const servicesData : Service[] = [
         name:"Energy Efficiency Consulting",
         image:"/Images/Energy.png",
         desc:"Implementation of energy-efficient technologies and practices.",
-        bgColor:"",
+        bgColor:"bg-[#0076EF]",
         url:"",
         index:3
     },
@@ -47,9 +47,9 @@ const servicesData : Service[] = [
 
 const FeaturedServices = () => {
     return ( 
-        <div className="my-[60px] mx-[100px]">
-            <h2 className="text-black font-gilroy font-bold text-[40px] text-center mt-[50px]">Featured Services</h2>
-            <div className="flex justify-between gap-[30px] mt-[45px]">
+        <div className="lg:my-[60px] lg:mx-[100px] md:px-[30px] lg:px-[0px] mx-4"> 
+            <h2 className="text-black font-gilroy font-bold md:text-[30px] lg:text-[40px] text-center mt-[50px]">Featured Services</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 justify-between lg:gap-[30px] md:gap-4 gap-3 mt-[45px]">
                {
                  servicesData.map((item,index)=>(
                     <ServiceCards service={item} key={index}/>
