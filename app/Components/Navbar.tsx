@@ -16,14 +16,14 @@ const Navbar = () => {
             {/* Desktop Navigation */}
             <div id="nav_menu" className="flex md:flex-1 gap-[80px]">
                 <ul className="hidden md:flex flex-auto justify-between text-white items-center">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Products</li>
-                    <li>Careers</li>
+                    <li className="cursor-pointer">Home</li>
+                    <li className="cursor-pointer">About</li>
+                    <li className="cursor-pointer">Services</li>
+                    <li className="cursor-pointer">Products</li>
+                    <li className="cursor-pointer">Careers</li>
                 </ul>
                 <div className="text-end grid grid-flow-col items-center gap-6">
-                    <button className="border border-[#FFF500] px-4 sm:px-6 py-2 md:px-[30px] md:py-[10px] text-[#FFF500] rounded-md">Contact us</button>
+                    <button className="border border-[#FFF500] px-4 sm:px-6 py-2 md:px-[30px] md:py-[10px] text-[#FFF500] rounded-md hover:border-[#00C700] hover:text-[#00C700]">Contact us</button>
                     {/* Mobile Navigation Icon */}
                     <div onClick={handleNav} className='block cursor-pointer md:hidden'>
                         {nav ? <AiOutlineClose className="text-white" size={30} /> : <AiOutlineMenu className="text-white" size={30} />}

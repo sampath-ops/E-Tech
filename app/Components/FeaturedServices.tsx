@@ -47,9 +47,9 @@ const servicesData : Service[] = [
 
 const FeaturedServices = () => {
     return ( 
-        <div className="lg:my-[60px] lg:mx-[100px] md:px-[30px] lg:px-[0px] mx-4"> 
-            <h2 className="text-black font-gilroy font-bold md:text-[30px] lg:text-[40px] text-center mt-[50px]">Featured Services</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 justify-between lg:gap-[30px] md:gap-4 gap-3 mt-[45px]">
+        <div className=" my-10 md:my-[84px] lg:my-[100px] lg:mx-[100px] md:mx-[30px] mx-4"> 
+            <h2 className="text-black font-gilroy font-bold text-[20px] md:text-[30px] lg:text-[40px] text-center">Featured Services</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 justify-between lg:gap-[30px] md:gap-4 gap-3 mt-4 md:mt-[40px] lg:mt-[45px]">
                {
                  servicesData.map((item,index)=>(
                     <ServiceCards service={item} key={index}/>
