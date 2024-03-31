@@ -1,0 +1,8 @@
+.TabsTrigger[data-state='active'] {
+    color: #3D3D3D;
+    border-bottom: 3px solid #FFF500;
+}
+.TabsTrigger{
+    color:"#A1A1A1";
+    padding-bottom: 6px;
+}

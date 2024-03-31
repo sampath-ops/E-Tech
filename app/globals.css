@@ -2,23 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-#Service_card_container:hover #service_name{
-    color: #fff;
+#Service_card_container:hover #service_name {
+  color: #fff;
 }
-#Service_card_container:hover #service_desc{
-    color:#E7E7E7
+
+#Service_card_container:hover #service_desc {
+  color: #E7E7E7
 }
 
 @layer utilities {
-    .row-height-30 {
-      grid-template-rows: repeat(3, 30px); /* 3 rows with 30px height each */
-    }
+  .row-height-30 {
+    grid-template-rows: repeat(3, 30px);
+    /* 3 rows with 30px height each */
   }
+}
 
-  #testimonial_card:hover,#testimonial_card:hover #designation{
-
-    color: #FFF;
-    
-    background-color: #00C700;
-    
-    }
+#testimonial_card:hover,
+#testimonial_card:hover #designation {
+  color: #FFF;
+  background-color: #00C700;
+}
