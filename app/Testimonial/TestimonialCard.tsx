@@ -2,14 +2,13 @@ import Image from "next/image"
 
 export const TestimonialCard = ({ data }: any, index: number) => {
     const { name, designation, review, rating, img } = data
-    console.log("rating: ",rating)
     const totalStars = 5
     const stars = Array.from({ length: totalStars }, (value, index) => {
         if (index < rating) {
             return <Image className="inline-block" key={index} src={"/Images/Star.png"} alt="YellowStar" width={20} height={20} />
         }
         else {
-            return <Image className="inline-block hidden" key={index} src={"/Images/Star.png"} alt="EmptyStar" width={20} height={20} />
+            return <Image className="inline-block" key={index} src={"/Images/Star.png"} alt="EmptyStar" width={20} height={20} />
         }
     })
 
