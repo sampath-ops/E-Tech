@@ -5,8 +5,10 @@ import FeaturedServices from "./Components/FeaturedServices";
 import OurProducts from "./Components/OurProducts";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
-import Testimonial from "./Components/Testimonial";
+import Testimonial from "./Testimonial/Testimonial";
 import WhoWeAre from "./Components/WhoWeAre";
+import "./embla.css"
+
 export default function Home() {
   return (
     <div>
@@ -15,7 +17,8 @@ export default function Home() {
        <FeaturedServices/>
        <OurProducts/>
        <WhoWeAre/>
-         {/*     <Testimonial/>  */}
+       <Testimonial/>
+       {/* <EmblaCarousel />  */}
       {/* <ContactUs/> */}
       {/* <Footer/> */}
     </div>
