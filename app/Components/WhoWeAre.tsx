@@ -21,7 +21,7 @@ const WhoWeAre = () => {
         <div className=" mt-16 mx-4 my-10 md:my-[80px] lg:my-[100px] md:mx-[80px] lg:mx-[200px]">
             <h2 className="text-[20px] md:text-[30px] lg:text-[40px]  text-center font-gilroy-bold font-bold mb-6 ">Who We Are?</h2>
             <div className="flex gap-6 md:mt-8 lg:mt-12 flex-col lg:flex-row">
-                <Image className="flex-1 rounded-lg" src={"/Images/greenLight.png"} alt="green-light" width={600} height={400} />
+                <Image className="flex-1 rounded-lg md:ml-auto md:mr-auto lg:m-0" src={"/Images/greenLight.png"} alt="green-light" width={600} height={400} />
                 <div className="flex-1">
                     <div>
                         <h3 className="text-[25px] font-gilroy-bold font-bold">Our Vision</h3>

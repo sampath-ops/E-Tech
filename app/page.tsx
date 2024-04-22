@@ -12,15 +12,14 @@ import "./embla.css"
 export default function Home() {
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-       <FeaturedServices/>
-       <OurProducts/>
-       <WhoWeAre/>
-       <Testimonial/>
-       {/* <EmblaCarousel />  */}
-      {/* <ContactUs/> */}
+      <Navbar />
+      <Hero />
+      <FeaturedServices />
+      <OurProducts />
+      <WhoWeAre />
+      <Testimonial />
+      <ContactUs />
       {/* <Footer/> */}
     </div>
-    );
+  );
 }
