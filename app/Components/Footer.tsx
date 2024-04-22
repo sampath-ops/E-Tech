@@ -117,12 +117,12 @@ const Links = ({data,customclass}:any) => {
         <div className={`${customclass ? customclass:"flex-1"}`}>
             <p className="text-[#00C700] font-gilroy-bold text-lg mb-4">{data.title}</p>
             <div>
-                <ul className={data.links[0].img ? "grid gap-y-5 row-height-30":""}>
+                <ul className={data.links[0].img ? "grid gap-y-8 lg:gap-y-5 row-height-30":""}>
                     {
                         data.links.map((link:any,index:number)=>(
                             <div className={link.img ? "flex gap-4":""} key={index}>
                                 {link.img ? <Image alt="" src={link.img} width={30} height={30}/> :null}
-                                <li className="text-[#FFF] text-base leading-8 ">{link.text}</li>
+                                <li className="text-[#FFF] text-base md:leading-8 ">{link.text}</li>
                             </div>
                         ))
                     }
