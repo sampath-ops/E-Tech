@@ -122,7 +122,7 @@ const Links = ({data,customclass}:any) => {
                         data.links.map((link:any,index:number)=>(
                             <div className={link.img ? "flex gap-4":""} key={index}>
                                 {link.img ? <Image alt="" src={link.img} width={30} height={30}/> :null}
-                                <li className="text-[#FFF] text-base leading-8">{link.text}</li>
+                                <li className="text-[#FFF] text-base leading-8 ">{link.text}</li>
                             </div>
                         ))
                     }
@@ -135,11 +135,11 @@ const Links = ({data,customclass}:any) => {
 
 const Footer = () => {
     return (
-        <div className="bg-[url('/Images/footer_bg.png')]  bg-no-repeat bg-cover px-[130px] py-[60px]">
-        <div className="flex gap-8">
-            <div className=" flex-[1.5]">
+        <div className="bg-[url('/Images/footer_bg.png')]  bg-no-repeat bg-cover px-[40px] py-[20px] sm:px-[60px] sm:py-[30px] lg:px-[120px] lg:py-[60px]">
+        <div className="flex gap-8 flex-col lg:flex-row">
+            <div className="flex-[0.3]">
                 <div id="nav_logo" className=" flex-[0.4] items-center flex font-gilroy font-extrabold mb-4"><span className=" text-[#00C700] text-2xl">Green-</span><span className="text-[#FFF500] text-2xl">Tech</span></div>
-                <p className="text-[#FFF] leading-8">We are a forward-thinking startup dedicated to providing cutting-edge technology solutions that not only propel businesses into the future but also contribute to a greener and more sustainable world.</p>
+                <p className="text-[#FFF] leading-8 text-[14px] md:text-[16px]">We are a forward-thinking startup dedicated to providing cutting-edge technology solutions that not only propel businesses into the future but also contribute to a greener and more sustainable world.</p>
                 <div className="flex gap-5 mt-10">
                     {
                         icons.map((icon,index)=>(
@@ -148,10 +148,12 @@ const Footer = () => {
                     }
                 </div>
             </div>
-            <Links data={linksData[0]} customclass="flex-0.8"/>
-            <Links data={linksData[1]} customclass="flex-1.3"/>
-            <Links data={linksData[2]} customclass="flex-1.3"/>
-            <Links data={linksData[3]} customclass="flex-2"/>
+            <div className="lg:flex lg:flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 lg:mb-0">
+                <Links data={linksData[0]} customclass="flex-0.8"/>
+                <Links data={linksData[1]} customclass="flex-1.3"/>
+                <Links data={linksData[2]} customclass="flex-1.3"/>
+                <Links data={linksData[3]} customclass="flex-2"/>
+            </div>
         </div>
         <p className="text-[#FFF] text-sm font-gilroy-medium text-center">Copyright © 2024 <b>Green-Tech Solutions.</b> All Rights Reserved</p>
         </div>
