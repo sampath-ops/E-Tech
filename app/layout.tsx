@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./gilroy.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,16 +20,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* Start of HubSpot Embed Code */}
-      
+
       {/* End of HubSpot Embed Code */}
-      <body className={inter.className}>{children}
-      <script
-        type="text/javascript"
-        id="hs-script-loader"
-        async
-        defer
-        src="//js.hs-scripts.com/46651792.js"
-      ></script></body>
+      <body className={inter.className}>
+        {children}
+        <Script
+          type="text/javascript"
+          id="hs-script-loader"
+          src="//js.hs-scripts.com/46651792.js"
+          strategy="lazyOnload"
+        ></Script>
+      </body>
     </html>
   );
 }
