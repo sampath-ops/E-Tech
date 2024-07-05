@@ -22,3 +22,6 @@
   color: #FFF;
   background-color: #00C700;
 }
+#hs-banner-parent button{
+  text-align: start;
+}
